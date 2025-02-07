@@ -1,0 +1,111 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+#root { /*ขยับข้อความไปไว้ด้านบน*/
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* ขยับข้อความขึ้นด้านบน */
+  min-height: 100vh;
+}
+
+.fonthead { 
+  font-family: 'Arial, sans-serif';
+  font-style: italic;
+  position: absolute;
+  color: #BEBEBE;
+  top: 20px; /* ขยับขึ้นด้านบน */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.color-bar {
+  width: 100%; /* กว้างเต็มหน้าจอ */
+  height: 50px; /* ความสูงของแถบ */
+  background-color: #E6E6FA; /* สีของแถบ */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* ให้แถบสีอยู่ด้านหลังเนื้อหาหลัก */
+}
+
+body {
+  background-color: #FFE4E1;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 350px;
+  margin-top: 40px; /* เพิ่ม margin-top เพื่อขยับกล่องลง */
+}
+
+.input-box {
+  margin-top: 90px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+
+
+
+

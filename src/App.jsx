@@ -1,0 +1,25 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <div className="container">
+        <h1 className="fonthead">
+          TIGGER-B
+        </h1>
+        <input 
+          type="text" 
+          placeholder="กรอกข้อความที่นี่..." 
+          className="input-box"
+        />
+      </div>
+    </>
+  )
+}
+
+export default App

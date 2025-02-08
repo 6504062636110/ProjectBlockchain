@@ -57,7 +57,7 @@
   font-family: 'Arial, sans-serif';
   font-style: italic;
   position: absolute;
-  color: #BEBEBE;
+  color: #795548;
   top: 20px; /* ขยับขึ้นด้านบน */
   left: 50%;
   transform: translateX(-50%);
@@ -74,7 +74,7 @@
 }
 
 body {
-  background-color: #FFE4E1;
+  background-color: #ece4d4;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -105,7 +105,19 @@ body {
   text-align: center;
 }
 
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #c4bcac;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-
-
-
+.btn:hover {
+  background-color: #c4bcac;
+}
